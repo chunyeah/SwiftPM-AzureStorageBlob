@@ -60,11 +60,11 @@ public final class StorageError: XMLModel {
 
 extension StorageError: Codable {
     /// :nodoc:
-    public convenience init(from decoder: Decoder) throws {
-        let root = try decoder.container(keyedBy: CodingKeys.self)
-        self.init(
-            code: try root.decode(String.self, forKey: .code),
-            message: try root.decode(String.self, forKey: .message)
-        )
-    }
+//    public convenience init(from decoder: Decoder) throws {
+//        let root = try decoder.container(keyedBy: CodingKeys.self)
+//        self.init(
+//            code: try root.decode(String.self, forKey: .code),
+//            message: try root.decode(String.self, forKey: .message)
+//        )
+//    }
 }
